@@ -1,4 +1,6 @@
-require 'fbgraph'
+require 'fgraph'
+
+enable :sessions
 
 def base_uri
   base_uri_raw = request.env["HTTP_HOST"]+request.env["SCRIPT_NAME"]
